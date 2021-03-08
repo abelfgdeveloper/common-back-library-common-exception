@@ -7,11 +7,11 @@ public class ConflictException extends AbelfgDeveloperException {
   private static final long serialVersionUID = 1L;
   private static final int ERROR_STATUS_CODE = 409;
 
-  protected ConflictException(String message) {
+  public ConflictException(String message) {
     super(ERROR_STATUS_CODE, message);
   }
 
-  protected ConflictException(String message, Throwable cause) {
+  public ConflictException(String message, Throwable cause) {
     super(ERROR_STATUS_CODE, message, cause);
   }
 }

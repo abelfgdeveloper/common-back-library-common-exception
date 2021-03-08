@@ -4,11 +4,11 @@ public class ValidationResponseException extends InternalServerErrorException {
 
   private static final long serialVersionUID = 1L;
 
-  protected ValidationResponseException(String message) {
+  public ValidationResponseException(String message) {
     super(message);
   }
 
-  protected ValidationResponseException(String message, Throwable cause) {
+  public ValidationResponseException(String message, Throwable cause) {
     super(message, cause);
   }
 }

@@ -7,11 +7,11 @@ public class BadRequestException extends AbelfgDeveloperException {
   private static final long serialVersionUID = 1L;
   private static final int ERROR_STATUS_CODE = 400;
 
-  protected BadRequestException(String message) {
+  public BadRequestException(String message) {
     super(ERROR_STATUS_CODE, message);
   }
 
-  protected BadRequestException(String message, Throwable cause) {
+  public BadRequestException(String message, Throwable cause) {
     super(ERROR_STATUS_CODE, message, cause);
   }
 }

@@ -7,11 +7,11 @@ public class InternalServerErrorException extends AbelfgDeveloperException {
   private static final long serialVersionUID = 1L;
   private static final int ERROR_STATUS_CODE = 500;
 
-  protected InternalServerErrorException(String message) {
+  public InternalServerErrorException(String message) {
     super(ERROR_STATUS_CODE, message);
   }
 
-  protected InternalServerErrorException(String message, Throwable cause) {
+  public InternalServerErrorException(String message, Throwable cause) {
     super(ERROR_STATUS_CODE, message, cause);
   }
 }
